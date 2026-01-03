@@ -1,0 +1,18 @@
+{
+    "name": "weatherproject-root",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Root package to manage client and server",
+    "scripts": {
+        "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+        "build": "npm run build --prefix client",
+        "start": "npm start --prefix server",
+        "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^9.2.1"
+    }
+}
